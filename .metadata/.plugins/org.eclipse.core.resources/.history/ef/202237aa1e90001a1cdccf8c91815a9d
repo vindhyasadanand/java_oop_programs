@@ -1,0 +1,47 @@
+package join_method;
+
+class Single extends Thread
+{
+	//we are overriding run method from Thread class
+	public void run()
+	{
+		
+		 Thread t = currentThread();
+		System.out.println("We are implementing Threads using inheritance concept");
+		for(int i=0; i<=5;i++)
+		{
+			
+			try
+			{
+				t.sleep(2000);
+			}
+			catch(Exception e)
+			{
+				
+			}
+			System.out.println(i);
+		}
+		
+	}
+}
+
+public class test {
+
+	public static void main(String[] args) {
+		Single th = new Single(); //we are creating an instance for derived class
+	//	Single th1= new Single(); //we created another instance of derived class
+		th.start(); 
+		//we are implementing join() method it should be written inside try catch block
+	/*	try
+		{
+			th.join();
+		}
+		catch(Exception e)
+		{
+			
+		}*/
+	//	th1.start();
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package join_method;
+
+class Single extends Thread
+{
+	//we are overriding run method from Thread class
+	public void run()
+	{
+		
+		 
+		System.out.println("We are implementing Threads using inheritance concept");
+		for(int i=0; i<=5;i++)
+		{
+			
+			System.out.println(i);
+		}
+		
+	}
+}
+
+public class test {
+
+	public static void main(String[] args) {
+		Single th = new Single(); //we are creating an instance for derived class
+		Single th1= new Single(); //we created another instance of derived class
+		th.start(); 
+		th1.start();
+		
+		
+		
+}
+
+}

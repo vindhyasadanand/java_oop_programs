@@ -1,0 +1,35 @@
+class Single extends Thread
+{
+	//we are overriding run method from Thread class
+	public void run()
+	{
+		
+		 
+		System.out.println("We are implementing Threads using inheritance concept");
+		for(int i=0; i<=5;i++)
+		{
+			try
+			{
+				Thread.sleep(2000); //we are implementing sleep method.
+				
+			}
+			catch(Exception e)
+			{
+				
+			}
+			System.out.println(i);
+		}
+		
+	}
+}
+
+public class test {
+
+	public static void main(String[] args) {
+
+		Single th = new Single(); //we are creating an instance for derived class
+		th.start(); //this will explicitly call run method
+
+	}
+
+}

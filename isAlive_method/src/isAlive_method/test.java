@@ -1,0 +1,37 @@
+package isAlive_method;
+
+class Single extends Thread
+{
+	//we are overriding run method from Thread class
+	public void run()
+	{
+		
+		Thread t  = currentThread(); 
+		System.out.println("The status of the current thread after it started executing:" + t.isAlive() );
+		for(int i=0;i<=5;i++)
+		{ 
+			if(i==4)
+			{
+				t.stop(); 
+			}
+			
+			System.out.println(i);
+		}
+		
+	}
+}
+
+public class test
+{
+
+	
+	public static void main(String[] args)
+	{
+		Single th = new Single(); //we are creating an instance for derived class
+	System.out.println("The status of the current thread before it starts executing:" + th.isAlive() );
+		th.start();
+		
+	}
+
+}
+

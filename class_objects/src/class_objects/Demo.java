@@ -1,0 +1,41 @@
+package class_objects;
+class Dog
+{
+	//data members or variables of the class
+	String name; 
+	int year;
+	String type;
+	//member functions or methods of the class
+	void setProp(String aName, int aYear, String aType)
+	{
+		name = aName;
+		year = aYear;
+		type = aType;
+	}
+	void display()
+	{
+		System.out.println("Name of the animal:"+ name );
+		System.out.println("Age of the Animal:"+ year + "years" );
+		System.out.println("Type of the animal:"+ type );
+		
+	}
+}
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//this is the object for animal class
+		Animal obj1 = new Animal();
+		//using object of the Animal class we are calling its methods
+		obj1.setProp("Jimmi", 5, "Dog");
+		obj1.display();
+		//created another object for existing class
+		Animal obj2 = new Animal();
+		//using object of Animal class we are calling methods of that class
+		obj2.setProp("Sweety", 3, "Cat");
+		obj2.display();
+		
+
+	}
+
+}

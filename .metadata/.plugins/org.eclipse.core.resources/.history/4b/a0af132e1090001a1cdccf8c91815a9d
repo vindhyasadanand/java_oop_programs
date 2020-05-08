@@ -1,0 +1,35 @@
+package getId_method;
+
+class Single extends Thread
+{
+	//we are overriding run method from Thread class
+	public void run()
+	{
+		
+		 
+		System.out.println("We are implementing Threads using inheritance concept");
+		
+		
+	}
+}
+
+public class test {
+
+	public static void main(String[] args) {
+		Single th = new Single(); //we are creating an instance for derived class
+		Single th1= new Single(); //we created another instance of derived class
+		System.out.println("ID of this thread will be=" + th.getId()); //it will give id of the current thread
+		/*System.out.println("Name of the first Thread is:" + th.getName()); //it will give current thread name
+		System.out.println("Name of the second Thread is:" + th1.getName());//it will give current thread name
+		th.setName("vindhya"); //it will set the current thread name
+		System.out.println("Name of the first Thread afer changing is:" + th.getName()); //to check modified thread name we are using it 
+		System.out.println("Priority of thread is:"+ th.getPriority());//we are checking priority of the current thread
+		th.setPriority(4);
+		System.out.println("Priority of the thread after changing:"+ th.getPriority()); // to set priority of the thread
+		th.start(); */
+		
+		
+		
+}
+
+}

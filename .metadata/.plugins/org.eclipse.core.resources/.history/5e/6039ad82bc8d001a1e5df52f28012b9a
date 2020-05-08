@@ -1,0 +1,32 @@
+package interfaces;
+interface A
+{
+	public void Adisplay();//abstract method we are writing its defination in other class which implements this interface
+	
+}
+interface B
+{
+	public void Bdisplay();
+}
+class AB implements A,B
+{
+	public void Adisplay()
+	{
+		System.out.println("we are inside class AB");
+	}
+	public void Bdisplay()
+	{
+		System.out.println("we are inside class AB to implement interface B");
+	}
+}
+
+public class Amain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AB obj = new AB();
+		obj.Adisplay();
+
+	}
+
+}

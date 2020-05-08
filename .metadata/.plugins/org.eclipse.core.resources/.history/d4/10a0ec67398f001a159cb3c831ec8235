@@ -1,0 +1,20 @@
+import java.util.*;
+class Single extends Thread
+{
+	//we are overriding run method from Thread class
+	public void run()
+	{
+		System.out.println("We are implementing Threads using inheritence concept");
+	}
+}
+
+public class test {
+
+	public static void main(String[] args) {
+		Single th = new Single(); //we are creating an instance for derived class
+		th.start();
+		
+
+	}
+
+}

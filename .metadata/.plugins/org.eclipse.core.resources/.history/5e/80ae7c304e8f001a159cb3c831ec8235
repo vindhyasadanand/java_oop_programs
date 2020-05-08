@@ -1,0 +1,22 @@
+// creation of single thread using inheritance 
+class Single extends Thread
+{
+	//we are overriding run method from Thread class
+	public void run()
+	{
+		System.out.println("We are implementing Threads using inheritance concept");
+	}
+}
+
+public class test {
+
+	public static void main(String[] args) {
+		Single th = new Single(); //we are creating an instance for derived class
+		System.out.println("ID of this thread will be=" + th.getId());
+		System.out.println("Name of the Thread is:" + th.getName());
+		th.start();
+		
+
+	}
+
+}

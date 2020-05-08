@@ -1,0 +1,32 @@
+package class_objects;
+class Animal
+{
+	String name;
+	int year;
+	String type;
+	void setProp(String aName, int aYear, String aType)
+	{
+		name = aName;
+		year = aYear;
+		type = aType;
+	}
+	void display()
+	{
+		System.out.println("Name of the animal:"+ name );
+		System.out.println("Age of the Animal:"+ year + "years" );
+		System.out.println("Type of the animal:"+ type );
+		
+	}
+}
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animal obj = new Animal();
+		obj.setProp("Jimmi", 5, "Dog");
+		
+
+	}
+
+}
